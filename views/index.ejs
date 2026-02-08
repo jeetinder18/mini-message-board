@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+
+        <%- include('navbar', {links: links}); %>
+
+        <ul>
+            <% messages.forEach((message, index) => { %>
+                <li>
+                    <%= message.text %><br>
+                    <%= message.user %><br>
+                    <%= message.added %>
+                    <a href="/messages/<%= index %>">Open</a>
+                </li>
+            <% }); %>
+        </ul>
+
+    </body>
+</html>
