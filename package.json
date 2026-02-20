@@ -1,4 +1,12 @@
 {
+  "name": "mini-message-board",
+  "version": "1.0.0",
+  "description": "Mini message board app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+
   "dependencies": {
     "ejs": "^4.0.1",
     "express": "^5.2.1"
