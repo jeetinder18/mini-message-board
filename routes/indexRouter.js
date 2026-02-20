@@ -23,7 +23,7 @@ indexRouter.get("/messages/:index", (req, res) => {
     const message = messages[req.params.index];
 
     if (!message) {
-        res.status(404).send("Message not found...");
+        return res.status(404).send("Message not found...");
     }
 
     res.render("message", { message: message , links: links});
